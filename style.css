@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* THIS PROPERTY CHANGES HOW THE BROWSER CALCULATES THE SIZE OF BOX ......THE PADDING AND BORDER ARE INCLUDED INSIDE INSIDE THE TOTALHEIGHT AND WIDTH*/
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f6;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #131921;
+    color: white;
+    padding: 10px;
+    display: flex;
+    /*ALIGN ITEMS VERTICALLY */
+    align-items: center;
+    /*ALIGN ITEMS HORIZONTALLY */
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.location {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.location i {
+    margin-right: 4px;
+}
+
+.search-bar {
+    /*IT ALLOWS TO GROW AND SHRINK AS PER REQUIRMENTS*/
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    /* IT HIDES CONTENT THAT GOES OUTSIDE THE WIDTH OR HEIGHT OF AN ELEMENT+*/
+    overflow: hidden;
+}
+
+.search-bar:hover {
+    border: 2px solid orange;
+}
+
+.search-bar select,
+.search-bar input {
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.search-bar input {
+    /*FLEX-GROW PROPERTY DETERMINES HOW MUCH FLEX ITEM GROWS COMPARED TO OTHERS IN THE SAME CONTAINER */
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: orange;
+    border: none;
+    /*INDICATES THAT ELEMENT IS CLICKABLE  */
+    cursor: pointer;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    /*PUT SPACE BETWEEN EACH  FLEX ITEM */
+    gap: 20px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.nav-links a {
+    font-weight: bold;
+}
+
+/* HERO BANNER */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 60px 80px;
+    height: 400px;
+    box-shadow: 0 4px 8px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    /*ADDS SPACE BETWEEN EACH LETTER*/
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.hero-text button {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-text button:hover {
+    background-color: #e03e3e;
+}
+
+.hero-img img {
+    height: 350px;
+    /*IT CONTROLLS HOW IMAGES ARE RESIZED TO FIT INTO THEIR CONTAINER */
+    object-fit: cover;
+}
+
+/* PRODUCT CONTAINER */
+.container {
+
+    display: grid;
+    /*CREATES 4 EQUAL WIDTH COLUMN ,EACH TAKING 1 FRACTION OF THE AVAILABLE SPACE */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.box h3 {
+    margin-bottom: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.box img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: #232f3e;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.foot_pannel1 {
+    background-color: #37475a;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.foot_pannel2 {
+    display: flex;
+    /*ALLOWS ITEMS TO MOVE TO NEXT LINES IF COLUMN IS TOO NARROW */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.foot_pannel2 ul {
+    list-style: none;
+}
+
+.foot_pannel2 ul p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.foot_pannel2 ul a {
+    display: block;
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+.foot_pannel2 ul a:hover {
+    text-decoration: underline;
+}
+
+.foot_pannel3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid white;
+}
+
+.foot_pannel4 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.pages a {
+    margin: 0 10px;
+    font-size: 0.8rem;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    padding: 5px 0 20px;
+}
